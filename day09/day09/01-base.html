@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入jq框架 -->
+    <script src="js/jquery.min.js"></script>
+    <!--1. 寻找目标文件 
+        2. 下载文件
+        3. 解析文件  -->  
+</head>
+<body>
+    <div id="tip">hello,world!</div>
+    <!-- 添加一个id为marry -->
+    <input type="checkbox"
+           name="marry" 
+           checked
+           id="marry">婚否
+    <script>
+      //输出jq对象
+      console.log($("#tip"));
+      //输出dom对象
+      console.log(document.getElementById("tip"));
+      //转成jq对象
+      console.log($(document.getElementById("tip")));
+      //jq对象转原生
+      console.log($("#tip")[0])
+
+
+      //1.获取jq选择器获取元素
+      //2.改变元素显示的内容
+      $("#tip").html("<b>今天的天气很好</b>")
+
+      console.log($("#tip").attr("id"));
+
+
+      //获取jq对象
+      console.log($("#marry").attr("checked"));
+      console.log($("#marry").prop("checked"));
+    </script>
+</body>
+</html>

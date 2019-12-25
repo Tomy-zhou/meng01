@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #mob{
+           width: 352px;
+           height: 626px;
+           margin: 0 auto;
+           border: solid 0px red;
+           background-image: url("imgs/img06.png");
+       }
+       #mob iframe{
+           margin-top: 74px;
+           margin-left:16px
+       }
+    </style>
+</head>
+<body>
+    <div id="mob" onclick='var a=document.getElementById("mob");a.style.display="none";'>
+       <!-- <img src="imgs/img05.png" alt=""> -->
+       <!-- 在页面打开一个指定地址的页面 
+              如果在一个页面中嵌入另外一个网址的页面，可以使用
+              iframe 元素
+            启动时，消耗比较大，但也是一种方式。
+       -->
+       <iframe src="https://n.sinaimg.cn/news/transform/60/w520h340/20190402/hVRE-hvcmeux5422739.png" frameborder="1"
+           scrolling="no" width="322" height="482">
+       </iframe>
+
+    </div>
+    <script>
+      
+      
+    </script>
+</body>
+</html>
